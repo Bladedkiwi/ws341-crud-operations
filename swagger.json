@@ -7,10 +7,7 @@
   },
   "host": "ws341-contacts-project.onrender.com",
   "basePath": "/",
-  "schemes": [
-    "http",
-    "https"
-  ],
+  "schemes": "https",
   "paths": {
     "/": {
       "get": {
