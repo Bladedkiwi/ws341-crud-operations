@@ -8,6 +8,7 @@ const {connectDatabase} = require("./data/connect-db");
 const swaggerDocument = require('./swagger.json');
 const errorHandlers = require('./errorHandler');
 require('./models/Wrangler');
+require('./models/Bunny');
 
 
 const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@${process.env.MONGO_URL}`
