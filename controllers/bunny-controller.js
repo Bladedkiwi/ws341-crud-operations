@@ -1,4 +1,4 @@
-const Bunny = require('../models/bunny');
+const Bunny = require('../models/Bunny');
 
 
 async function getAllBunny (req,res) {

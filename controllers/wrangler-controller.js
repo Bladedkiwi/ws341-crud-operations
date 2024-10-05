@@ -1,4 +1,4 @@
-const Wrangler = require('../models/wrangler');
+const Wrangler = require('../models/Wrangler');
 
 
 async function getAllWranglers (req,res) {
