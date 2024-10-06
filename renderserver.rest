@@ -1,0 +1,90 @@
+POST https://ws341-contacts-project.onrender.com/wrangler
+Content-Type: application/json
+
+{
+  "profile": {
+    "firstName": "Harry",
+    "LastName": "kkk",
+    "age": 33,
+    "email": "ivalencia0@kssiff.com",
+    "backgroundDescription": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+    "profileImg": "http://163.com/ipsum/dolor/sit/amet/consectetuer/adipiscing/elit.json?libero=mi&ut=integer&massa=ac&volutpat=neque&convallis=duis&morbi=bibendum&odio=morbi&odio=non&elementum=quam&eu=nec&interdum=dui&eu=luctus&tincidunt=rutrum&in=nulla&leo=tellus&maecenas=in&pulvinar=sagittis&lobortis=dui&est=vel&phasellus=nisl&sit=duis&amet=ac&erat=nibh&nulla=fusce&tempus=lacus&vivamus=purus&in=aliquet&felis=at&eu=feugiat&sapien=non&cursus=pretium&vestibulum=quis&proin=lectus&eu=suspendisse&mi=potenti&nulla=in&ac=eleifend&enim=quam&in=a&tempor=odio&turpis=in&nec=hac&euismod=habitasse&scelerisque=platea&quam=dictumst&turpis=maecenas&adipiscing=ut&lorem=massa&vitae=quis&mattis=augue&nibh=luctus&ligula=tincidunt&nec=nulla&sem=mollis&duis=molestie&aliquam=lorem&convallis=quisque&nunc=ut&proin=erat&at=curabitur&turpis=gravida&a=nisi&pede=at&posuere=nibh&nonummy=in&integer=hac&non=habitasse&velit=platea&donec=dictumst&diam=aliquam&neque=augue&vestibulum=quam&eget=sollicitudin&vulputate=vitae&ut=consectetuer&ultrices=eget&vel=rutrum&augue=at"
+  },
+  "password": "$2bfjfjdkK"
+}
+
+
+###
+PUT https://ws341-contacts-project.onrender.com/wrangler/6700f6c5eb32f5eb81886297
+Content-Type: application/json
+
+{
+  "profile": {
+    "firstName": "Isa",
+    "LastName": "Valencia",
+    "age": 97,
+    "email": "ivalencia0@friendfeed.com",
+    "backgroundDescription": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+    "profileImg": "http://163.com/ipsum/dolor/sit/amet/consectetuer/adipiscing/elit.json?libero=mi&ut=integer&massa=ac&volutpat=neque&convallis=duis&morbi=bibendum&odio=morbi&odio=non&elementum=quam&eu=nec&interdum=dui&eu=luctus&tincidunt=rutrum&in=nulla&leo=tellus&maecenas=in&pulvinar=sagittis&lobortis=dui&est=vel&phasellus=nisl&sit=duis&amet=ac&erat=nibh&nulla=fusce&tempus=lacus&vivamus=purus&in=aliquet&felis=at&eu=feugiat&sapien=non&cursus=pretium&vestibulum=quis&proin=lectus&eu=suspendisse&mi=potenti&nulla=in&ac=eleifend&enim=quam&in=a&tempor=odio&turpis=in&nec=hac&euismod=habitasse&scelerisque=platea&quam=dictumst&turpis=maecenas&adipiscing=ut&lorem=massa&vitae=quis&mattis=augue&nibh=luctus&ligula=tincidunt&nec=nulla&sem=mollis&duis=molestie&aliquam=lorem&convallis=quisque&nunc=ut&proin=erat&at=curabitur&turpis=gravida&a=nisi&pede=at&posuere=nibh&nonummy=in&integer=hac&non=habitasse&velit=platea&donec=dictumst&diam=aliquam&neque=augue&vestibulum=quam&eget=sollicitudin&vulputate=vitae&ut=consectetuer&ultrices=eget&vel=rutrum&augue=at"
+  },
+  "password": "$2bfjfjdkK"
+}
+
+###
+GET https://ws341-contacts-project.onrender.com/wrangler
+Content-Type: application/json
+
+###
+
+GET https://ws341-contacts-project.onrender.com/wrangler/6700f6c5eb32f5eb8188629c
+Content-Type: application/json
+
+###
+DELETE https://ws341-contacts-project.onrender.com/wrangler/6700f6c5eb32f5eb8188629c
+Content-Type: application/json
+
+###
+POST https://ws341-contacts-project.onrender.com/bunny
+Content-Type: application/json
+
+{
+"profile": {
+"firstName": "Harry",
+"LastName": "kkk",
+"age": 33,
+"email": "ivalencia0@kssiff.com",
+"backgroundDescription": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+"profileImg": "http://163.com/ipsum/dolor/sit/amet/consectetuer/adipiscing/elit.json?libero=mi&ut=integer&massa=ac&volutpat=neque&convallis=duis&morbi=bibendum&odio=morbi&odio=non&elementum=quam&eu=nec&interdum=dui&eu=luctus&tincidunt=rutrum&in=nulla&leo=tellus&maecenas=in&pulvinar=sagittis&lobortis=dui&est=vel&phasellus=nisl&sit=duis&amet=ac&erat=nibh&nulla=fusce&tempus=lacus&vivamus=purus&in=aliquet&felis=at&eu=feugiat&sapien=non&cursus=pretium&vestibulum=quis&proin=lectus&eu=suspendisse&mi=potenti&nulla=in&ac=eleifend&enim=quam&in=a&tempor=odio&turpis=in&nec=hac&euismod=habitasse&scelerisque=platea&quam=dictumst&turpis=maecenas&adipiscing=ut&lorem=massa&vitae=quis&mattis=augue&nibh=luctus&ligula=tincidunt&nec=nulla&sem=mollis&duis=molestie&aliquam=lorem&convallis=quisque&nunc=ut&proin=erat&at=curabitur&turpis=gravida&a=nisi&pede=at&posuere=nibh&nonummy=in&integer=hac&non=habitasse&velit=platea&donec=dictumst&diam=aliquam&neque=augue&vestibulum=quam&eget=sollicitudin&vulputate=vitae&ut=consectetuer&ultrices=eget&vel=rutrum&augue=at"
+},
+"password": "$2bfjfjdkK"
+}
+
+
+###
+PUT https://ws341-contacts-project.onrender.com/bunny/6700f6c5eb32f5eb81886297
+Content-Type: application/json
+
+{
+  "profile": {
+    "firstName": "Isa",
+    "LastName": "Valencia",
+    "age": 97,
+    "email": "ivalencia0@friendfeed.com",
+    "backgroundDescription": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
+    "profileImg": "http://163.com/ipsum/dolor/sit/amet/consectetuer/adipiscing/elit.json?libero=mi&ut=integer&massa=ac&volutpat=neque&convallis=duis&morbi=bibendum&odio=morbi&odio=non&elementum=quam&eu=nec&interdum=dui&eu=luctus&tincidunt=rutrum&in=nulla&leo=tellus&maecenas=in&pulvinar=sagittis&lobortis=dui&est=vel&phasellus=nisl&sit=duis&amet=ac&erat=nibh&nulla=fusce&tempus=lacus&vivamus=purus&in=aliquet&felis=at&eu=feugiat&sapien=non&cursus=pretium&vestibulum=quis&proin=lectus&eu=suspendisse&mi=potenti&nulla=in&ac=eleifend&enim=quam&in=a&tempor=odio&turpis=in&nec=hac&euismod=habitasse&scelerisque=platea&quam=dictumst&turpis=maecenas&adipiscing=ut&lorem=massa&vitae=quis&mattis=augue&nibh=luctus&ligula=tincidunt&nec=nulla&sem=mollis&duis=molestie&aliquam=lorem&convallis=quisque&nunc=ut&proin=erat&at=curabitur&turpis=gravida&a=nisi&pede=at&posuere=nibh&nonummy=in&integer=hac&non=habitasse&velit=platea&donec=dictumst&diam=aliquam&neque=augue&vestibulum=quam&eget=sollicitudin&vulputate=vitae&ut=consectetuer&ultrices=eget&vel=rutrum&augue=at"
+  },
+  "password": "$2bfjfjdkK"
+}
+
+###
+GET https://ws341-contacts-project.onrender.com/bunny
+Content-Type: application/json
+
+###
+
+GET https://ws341-contacts-project.onrender.com/bunny/6700f6c5eb32f5eb8188629c
+Content-Type: application/json
+
+###
+DELETE https://ws341-contacts-project.onrender.com/bunny/6700f6c5eb32f5eb8188629c
+Content-Type: application/json

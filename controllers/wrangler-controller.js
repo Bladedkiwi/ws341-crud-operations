@@ -14,6 +14,13 @@ async function getWranglerById (req,res) {
 }
 
 async function createWrangler (req, res) {
+    /* #swagger.parameters['body'] = {
+           in: 'body',
+           description: 'Create Wrangler',
+           schema: { $ref: #/definitions/Wrangler}
+           }
+        */
+
     const wrangler = new Wrangler(req.body);
         await wrangler.save();
         res.status(200).send(wrangler);
@@ -21,6 +28,13 @@ async function createWrangler (req, res) {
 }
 
 async function updateWrangler(req,res) {
+        /* #swagger.parameters['body'] = {
+            in: 'body',
+            description: 'Update Wrangler',
+            schema: { $ref: #/definitions/Wrangler}
+            }
+         */
+
         // The {new: true} option sends back the newly create/updated document instead of the old version if there is one
         const wrangler = await Wrangler.findByIdAndUpdate(req.params.id, req.body, {new: true, runValidators: true} );
         if (!wrangler) {
