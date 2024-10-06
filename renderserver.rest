@@ -15,15 +15,15 @@ Content-Type: application/json
 
 
 ###
-PUT https://ws341-contacts-project.onrender.com/wrangler/6700f6c5eb32f5eb81886297
+PUT https://ws341-contacts-project.onrender.com/wrangler/6700f6c5eb32f5eb818862a0
 Content-Type: application/json
 
 {
   "profile": {
-    "firstName": "Isa",
-    "LastName": "Valencia",
+    "firstName": "Neep",
+    "LastName": "Dddf",
     "age": 97,
-    "email": "ivalencia0@friendfeed.com",
+    "email": "fdfs@dnnnls.com",
     "backgroundDescription": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
     "profileImg": "http://163.com/ipsum/dolor/sit/amet/consectetuer/adipiscing/elit.json?libero=mi&ut=integer&massa=ac&volutpat=neque&convallis=duis&morbi=bibendum&odio=morbi&odio=non&elementum=quam&eu=nec&interdum=dui&eu=luctus&tincidunt=rutrum&in=nulla&leo=tellus&maecenas=in&pulvinar=sagittis&lobortis=dui&est=vel&phasellus=nisl&sit=duis&amet=ac&erat=nibh&nulla=fusce&tempus=lacus&vivamus=purus&in=aliquet&felis=at&eu=feugiat&sapien=non&cursus=pretium&vestibulum=quis&proin=lectus&eu=suspendisse&mi=potenti&nulla=in&ac=eleifend&enim=quam&in=a&tempor=odio&turpis=in&nec=hac&euismod=habitasse&scelerisque=platea&quam=dictumst&turpis=maecenas&adipiscing=ut&lorem=massa&vitae=quis&mattis=augue&nibh=luctus&ligula=tincidunt&nec=nulla&sem=mollis&duis=molestie&aliquam=lorem&convallis=quisque&nunc=ut&proin=erat&at=curabitur&turpis=gravida&a=nisi&pede=at&posuere=nibh&nonummy=in&integer=hac&non=habitasse&velit=platea&donec=dictumst&diam=aliquam&neque=augue&vestibulum=quam&eget=sollicitudin&vulputate=vitae&ut=consectetuer&ultrices=eget&vel=rutrum&augue=at"
   },
@@ -36,11 +36,11 @@ Content-Type: application/json
 
 ###
 
-GET https://ws341-contacts-project.onrender.com/wrangler/6700f6c5eb32f5eb8188629c
+GET https://ws341-contacts-project.onrender.com/wrangler/6700f6c5eb32f5eb818862a0
 Content-Type: application/json
 
 ###
-DELETE https://ws341-contacts-project.onrender.com/wrangler/6700f6c5eb32f5eb8188629c
+DELETE https://ws341-contacts-project.onrender.com/wrangler/6700f6c5eb32f5eb818862a0
 Content-Type: application/json
 
 ###
@@ -48,32 +48,24 @@ POST https://ws341-contacts-project.onrender.com/bunny
 Content-Type: application/json
 
 {
-"profile": {
-"firstName": "Harry",
-"LastName": "kkk",
-"age": 33,
-"email": "ivalencia0@kssiff.com",
-"backgroundDescription": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
-"profileImg": "http://163.com/ipsum/dolor/sit/amet/consectetuer/adipiscing/elit.json?libero=mi&ut=integer&massa=ac&volutpat=neque&convallis=duis&morbi=bibendum&odio=morbi&odio=non&elementum=quam&eu=nec&interdum=dui&eu=luctus&tincidunt=rutrum&in=nulla&leo=tellus&maecenas=in&pulvinar=sagittis&lobortis=dui&est=vel&phasellus=nisl&sit=duis&amet=ac&erat=nibh&nulla=fusce&tempus=lacus&vivamus=purus&in=aliquet&felis=at&eu=feugiat&sapien=non&cursus=pretium&vestibulum=quis&proin=lectus&eu=suspendisse&mi=potenti&nulla=in&ac=eleifend&enim=quam&in=a&tempor=odio&turpis=in&nec=hac&euismod=habitasse&scelerisque=platea&quam=dictumst&turpis=maecenas&adipiscing=ut&lorem=massa&vitae=quis&mattis=augue&nibh=luctus&ligula=tincidunt&nec=nulla&sem=mollis&duis=molestie&aliquam=lorem&convallis=quisque&nunc=ut&proin=erat&at=curabitur&turpis=gravida&a=nisi&pede=at&posuere=nibh&nonummy=in&integer=hac&non=habitasse&velit=platea&donec=dictumst&diam=aliquam&neque=augue&vestibulum=quam&eget=sollicitudin&vulputate=vitae&ut=consectetuer&ultrices=eget&vel=rutrum&augue=at"
-},
-"password": "$2bfjfjdkK"
+  "name": "Nsaam MMad",
+  "age": 92,
+  "color": "Yellow",
+  "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+  "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAK4SURBVDjLbZJfSFNhGMaf72znbGfNaTRboKViYQUqmFp0IxVEFyMpoaQVBCWhV3kRdBPdCN2kiBBRgURdpBddCDIwIYoILcwyJEJiC8tIJZuzze387TmLxGxn57dzOO/3PN/75xOdnZ3TlmWVkYW+vr5K5LlaWlo+6LpeaRhGLBqN7lkfc1O40zTNh+Ria2urnc+AYocecmxjzE2hh5yku158ocfwSh5ohg3NAtqKb2G7Hzh3ecxNcRPZu9FAovA9uU1mXst31ZS6rEq+oGqrQTWOGrVQ/a5qmvaJ3CdT/2VAYYA0EaNQfocXqQnUu7ohmVUYWTqBqUQ1NO28wd1Pk8J8BjqJM1gd8gANW/xIaB34la7B0vJRzKwUO/VbxFkT2mggIpHINA0eMxgO95bXKcIHg7/J4bMooGFaM7DZr+DbwiqEBPh9Lli2wM/kKp6+ndvvNCdAmkOhUO3Ilbk150BjBocbq9Bc58fw+Fdci/wzPTx4tgjLEq8cgyQZisfjRtX1oX0qp6CbwPzzcSytGLnFoxPzCB8ozb1n+EljfDGhQQgLEjurkAriGs/eQNKMweICSRJw8VTopoXu9jruZsMkLAA+t4VsNotkSoObQpkZVBCxfgpeWUImq6Nr8DPoBYNGFnFOmm3zn7dPZgYULpNBIjtTOM6T4wt2wOBuWdOAS5KZqhvMh08XhRINBDg6jtfIZVBL8RlSfihYZitCha6WIprWhUxhe7iAZppz5nK72qzb61Zw89EsfiRTOQNq9XuKovQ/uTq/1mVzt1OvzIpX0T95CUHfDmYhYTH9BW0NvXzzIp3904MYDe6kUqk3AwMD9X8NTnWN2eXbgJB/BUdqG1GklOSSSGRKsHWTAZ/CUygERK4hea769tGXu0rVg0WeIqYcYBk6hGVRYMISaXycjWEhqeM3NCmjdDDSuwAAAAAASUVORK5CYII="
 }
 
 
 ###
-PUT https://ws341-contacts-project.onrender.com/bunny/6700f6c5eb32f5eb81886297
+PUT https://ws341-contacts-project.onrender.com/bunny/670215c43e8ce15f33c167c5
 Content-Type: application/json
 
 {
-  "profile": {
-    "firstName": "Isa",
-    "LastName": "Valencia",
-    "age": 97,
-    "email": "ivalencia0@friendfeed.com",
-    "backgroundDescription": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
-    "profileImg": "http://163.com/ipsum/dolor/sit/amet/consectetuer/adipiscing/elit.json?libero=mi&ut=integer&massa=ac&volutpat=neque&convallis=duis&morbi=bibendum&odio=morbi&odio=non&elementum=quam&eu=nec&interdum=dui&eu=luctus&tincidunt=rutrum&in=nulla&leo=tellus&maecenas=in&pulvinar=sagittis&lobortis=dui&est=vel&phasellus=nisl&sit=duis&amet=ac&erat=nibh&nulla=fusce&tempus=lacus&vivamus=purus&in=aliquet&felis=at&eu=feugiat&sapien=non&cursus=pretium&vestibulum=quis&proin=lectus&eu=suspendisse&mi=potenti&nulla=in&ac=eleifend&enim=quam&in=a&tempor=odio&turpis=in&nec=hac&euismod=habitasse&scelerisque=platea&quam=dictumst&turpis=maecenas&adipiscing=ut&lorem=massa&vitae=quis&mattis=augue&nibh=luctus&ligula=tincidunt&nec=nulla&sem=mollis&duis=molestie&aliquam=lorem&convallis=quisque&nunc=ut&proin=erat&at=curabitur&turpis=gravida&a=nisi&pede=at&posuere=nibh&nonummy=in&integer=hac&non=habitasse&velit=platea&donec=dictumst&diam=aliquam&neque=augue&vestibulum=quam&eget=sollicitudin&vulputate=vitae&ut=consectetuer&ultrices=eget&vel=rutrum&augue=at"
-  },
-  "password": "$2bfjfjdkK"
+  "name": "Red Barand",
+  "age": 92,
+  "color": "Yellow",
+  "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+  "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAK4SURBVDjLbZJfSFNhGMaf72znbGfNaTRboKViYQUqmFp0IxVEFyMpoaQVBCWhV3kRdBPdCN2kiBBRgURdpBddCDIwIYoILcwyJEJiC8tIJZuzze387TmLxGxn57dzOO/3PN/75xOdnZ3TlmWVkYW+vr5K5LlaWlo+6LpeaRhGLBqN7lkfc1O40zTNh+Ria2urnc+AYocecmxjzE2hh5yku158ocfwSh5ohg3NAtqKb2G7Hzh3ecxNcRPZu9FAovA9uU1mXst31ZS6rEq+oGqrQTWOGrVQ/a5qmvaJ3CdT/2VAYYA0EaNQfocXqQnUu7ohmVUYWTqBqUQ1NO28wd1Pk8J8BjqJM1gd8gANW/xIaB34la7B0vJRzKwUO/VbxFkT2mggIpHINA0eMxgO95bXKcIHg7/J4bMooGFaM7DZr+DbwiqEBPh9Lli2wM/kKp6+ndvvNCdAmkOhUO3Ilbk150BjBocbq9Bc58fw+Fdci/wzPTx4tgjLEq8cgyQZisfjRtX1oX0qp6CbwPzzcSytGLnFoxPzCB8ozb1n+EljfDGhQQgLEjurkAriGs/eQNKMweICSRJw8VTopoXu9jruZsMkLAA+t4VsNotkSoObQpkZVBCxfgpeWUImq6Nr8DPoBYNGFnFOmm3zn7dPZgYULpNBIjtTOM6T4wt2wOBuWdOAS5KZqhvMh08XhRINBDg6jtfIZVBL8RlSfihYZitCha6WIprWhUxhe7iAZppz5nK72qzb61Zw89EsfiRTOQNq9XuKovQ/uTq/1mVzt1OvzIpX0T95CUHfDmYhYTH9BW0NvXzzIp3904MYDe6kUqk3AwMD9X8NTnWN2eXbgJB/BUdqG1GklOSSSGRKsHWTAZ/CUygERK4hea769tGXu0rVg0WeIqYcYBk6hGVRYMISaXycjWEhqeM3NCmjdDDSuwAAAAAASUVORK5CYII="
 }
 
 ###
@@ -82,9 +74,9 @@ Content-Type: application/json
 
 ###
 
-GET https://ws341-contacts-project.onrender.com/bunny/6700f6c5eb32f5eb8188629c
+GET https://ws341-contacts-project.onrender.com/bunny/670215c43e8ce15f33c167c5
 Content-Type: application/json
 
 ###
-DELETE https://ws341-contacts-project.onrender.com/bunny/6700f6c5eb32f5eb8188629c
+DELETE https://ws341-contacts-project.onrender.com/bunny/670215c43e8ce15f33c167c5
 Content-Type: application/json

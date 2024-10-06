@@ -119,10 +119,10 @@ const swaggerDefinitions = require('./swaggerSchemas');
 
 const doc = {
     info: {
-        title: 'My API',
+        title: 'Bunny Wranglers and CRUD Operations',
         description: 'API Documentation',
     },
-    host: 'localhost:8888',
+    host: 'ws341-contacts-project.onrender.com',
     schemes: ['https','http'],
     definitions: swaggerDefinitions,
 };
