@@ -18,6 +18,15 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       }
@@ -26,16 +35,44 @@
       "get": {
         "description": "",
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       },
       "post": {
         "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/wrangler"
+            }
+          }
+        ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       }
@@ -52,8 +89,17 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       },
@@ -65,11 +111,28 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/wrangler"
+            }
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       },
@@ -84,8 +147,17 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       }
@@ -94,16 +166,44 @@
       "get": {
         "description": "",
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       },
       "post": {
         "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/bunny"
+            }
+          }
+        ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       }
@@ -120,8 +220,17 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       },
@@ -133,11 +242,28 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/bunny"
+            }
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       },
@@ -152,8 +278,17 @@
           }
         ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       }
@@ -173,188 +308,51 @@
     "wrangler": {
       "type": "object",
       "properties": {
-        "title": {
-          "type": "string",
-          "example": "Wrangler"
-        },
-        "required": {
-          "type": "array",
-          "example": [
-            "password"
-          ],
-          "items": {
-            "type": "string"
-          }
-        },
-        "properties": {
+        "profile": {
           "type": "object",
           "properties": {
-            "profile": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "object"
-                },
-                "properties": {
-                  "type": "object",
-                  "properties": {
-                    "firstName": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string",
-                          "example": "string"
-                        }
-                      }
-                    },
-                    "LastName": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string",
-                          "example": "string"
-                        }
-                      }
-                    },
-                    "age": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string",
-                          "example": "number"
-                        }
-                      }
-                    },
-                    "email": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string",
-                          "example": "string"
-                        }
-                      }
-                    },
-                    "backgroundDescription": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string",
-                          "example": "string"
-                        }
-                      }
-                    },
-                    "profileImg": {
-                      "type": "object",
-                      "properties": {
-                        "type": {
-                          "type": "string",
-                          "example": "string"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+            "firstName": {
+              "example": "string"
             },
-            "password": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "string"
-                }
-              }
+            "LastName": {
+              "example": "string"
             },
-            "_id": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "string"
-                }
-              }
+            "age": {
+              "example": "number"
+            },
+            "email": {
+              "example": "string"
+            },
+            "backgroundDescription": {
+              "example": "string"
+            },
+            "profileImg": {
+              "example": "string"
             }
           }
+        },
+        "password": {
+          "example": "string"
         }
       }
     },
     "bunny": {
       "type": "object",
       "properties": {
-        "title": {
-          "type": "string",
-          "example": "Bunny"
+        "name": {
+          "example": "string"
         },
-        "required": {
-          "type": "array",
-          "example": [
-            "name",
-            "color",
-            "image"
-          ],
-          "items": {
-            "type": "string"
-          }
+        "age": {
+          "example": "string"
         },
-        "properties": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "string"
-                }
-              }
-            },
-            "age": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "number"
-                }
-              }
-            },
-            "color": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "string"
-                }
-              }
-            },
-            "description": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "string"
-                }
-              }
-            },
-            "image": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "string"
-                }
-              }
-            },
-            "_id": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "example": "string"
-                }
-              }
-            }
-          }
+        "color": {
+          "example": "number"
+        },
+        "description": {
+          "example": "string"
+        },
+        "image": {
+          "example": "string"
         }
       }
     }

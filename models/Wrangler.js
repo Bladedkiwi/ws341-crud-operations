@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const passportLocalMongoose = require('passport-local-mongoose');
 
 
 /**
@@ -45,31 +46,38 @@ const wranglerSchema = new mongoose.Schema({
     password: {
         type: String,
         required: [true, 'Password is required'], min: [7, 'Must be at least 7 characters'], validate: {
-        validator: function (value) {
-            return /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{7,}$/.test(value);
-        },
-            message:'Must include a special character, number, and a capital'
-        }}
+            validator: function (value) {
+                return /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{7,}$/.test(value);
+            },
+            message: 'Must include a special character, number, and a capital'
+        }
+    },
+    //GitHub ID - don't show this, but we will store it.
+    githubId: String
 });
+
+// Hook up the schema to be used with Passport
+//passport-local-mongoose provides various methods that blend better with mongoose to facilitate local authentication
+wranglerSchema.plugin(passportLocalMongoose);
 
 /**
  * Save Hook
  * Hashes new password for storing users data
  */
 wranglerSchema.pre('save', async function (next) {
-   console.log('Pre Save has been initialized.');
+    console.log('Pre Save has been initialized.');
 
     if (!this.isModified('password')) {
         return next();
     }
-try {
-    //Hashing password
-    console.log('hashing password')
-    this.password = await bcrypt.hash(this.password, 12);
-    next();
-} catch (error) {
-    next(error);
-}
+    try {
+        //Hashing password
+        console.log('hashing password')
+        this.password = await bcrypt.hash(this.password, 12);
+        next();
+    } catch (error) {
+        next(error);
+    }
 });
 
 
@@ -79,7 +87,7 @@ try {
  *
  *
  */
-wranglerSchema.pre(['updateOne','findByIdAndUpdate', 'findOneAndUpdate'], async function (next) {
+wranglerSchema.pre(['updateOne', 'findByIdAndUpdate', 'findOneAndUpdate'], async function (next) {
     const data = this.getUpdate();
     await this.validate(data)
     if (data.password) {
@@ -89,11 +97,7 @@ wranglerSchema.pre(['updateOne','findByIdAndUpdate', 'findOneAndUpdate'], async 
 })
 
 
-
 module.exports = mongoose.models.Wrangler || mongoose.model('Wrangler', wranglerSchema);
-
-
-
 
 
 /**
